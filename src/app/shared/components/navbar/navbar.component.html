@@ -2,15 +2,15 @@
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
             <a class="opacity-100 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                href="#">
-                Á &amp; S
+                routerLink="/">
+                DOD
             </a>
 
             <a *ngIf="!this.showMenu"
                 class="mobile-rsvp px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white mr-4"
-                href="#RSVP">
+                routerLink="/contact">
                 <i class="fab fa-facebook-square text-lg leading-lg text-white"></i><span
-                    class="ml-2 text-white hover:green-text">RSVP</span>
+                    class="ml-2 text-white hover:green-text">Contact</span>
             </a>
             <button (click)="toggleNavbar()" type="button" class="opacity-100 lg:hidden fixed z-50 right-0 mx-2 bg-gray-900 inline items-center justify-center p-2 rounded-md
                 text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2
@@ -33,23 +33,23 @@
             <ul class="flex flex-col lg:flex-row list-none ml-auto">
                 <li class="nav-item py-4 lg:py-0">
                     <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white"
-                        href="#RSVP">
+                        routerLink="/services">
                         <i class="fab fa-facebook-square text-lg leading-lg text-white"></i><span
-                            class="ml-2 green-text hover:text-white">RSVP</span>
+                            class="ml-2 green-text hover:text-white">Services</span>
                     </a>
                 </li>
                 <li class="nav-item pb-1 lg:pb-0">
                     <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white"
-                        href="#where&when">
+                        routerLink="/about">
                         <i class="fab fa-twitter text-lg leading-lg text-white"></i><span
-                            class="ml-2 hover:green-text">Where & When</span>
+                            class="ml-2 hover:green-text">About</span>
                     </a>
                 </li>
                 <li class="nav-item pb-1 lg:pb-0">
                     <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white"
-                        href="#travel">
+                        routerLink="/contact">
                         <i class="fab fa-pinterest text-lg leading-lg text-white"></i><span
-                            class="ml-2 hover:green-text">Travel</span>
+                            class="ml-2 hover:green-text">Contact</span>
                     </a>
                 </li>
             </ul>
