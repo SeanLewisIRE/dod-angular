@@ -11,6 +11,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CardComponent } from './shared/components/card/card.component';
+import { MatCardModule } from '@angular/material';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,11 +30,13 @@ const routes: Routes = [
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CardComponent,
+    MatCardModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule],

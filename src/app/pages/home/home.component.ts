@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  heroTopSpan:string = "Example"
+  heroImage:string = "../../../../assets/images/ice.jpg"
+  heroHeader:string = "Example"
+  heroBottomSpan:string = "Example"
   constructor() { }
 
   ngOnInit(): void {
