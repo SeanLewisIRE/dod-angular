@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
@@ -9,11 +9,13 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule, MatButtonModule]
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() headerSubtitle:string = ""
+  @Input() header:string = ""
+  @Input() firstPara:string = ""
+  @Input() secondPara:string = ""
+  @Input() cardLink:string = ""
+  @Input() linkText:string = ""
 
 }

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +6,20 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  menuStyle: string = 'initial-opacity';
+  menuStyle: string = 'full-opacity';
   showMenu = false;
+
   toggleNavbar() {
     this.showMenu = !this.showMenu;
     this.showMenu ? this.menuStyle = 'full-opacity' : this.menuStyle = 'initial-opacity';
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (window.scrollY > 20) {
+      this.menuStyle = 'initial-opacity';
+    } else {
+      this.menuStyle = 'full-opacity'
+    }
   }
 }

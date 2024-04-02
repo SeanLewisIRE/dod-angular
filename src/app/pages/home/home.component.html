@@ -4,4 +4,17 @@
     [header]="heroHeader"
     [bottomSpan]="heroBottomSpan"
 ></app-hero>
-<app-card></app-card>
+<div class="card-wrapper">
+    <div>
+        <h1>Lorem Ipsum</h1>
+    </div>
+    <div>
+        <app-card *ngFor="let card of cardData" 
+        [header]="card.header"
+        [firstPara]="card.firstPara"
+        [cardLink]="card.link"
+        [linkText]="card.linkText"
+        >
+    </app-card>
+    </div>
+</div>
