@@ -17,5 +17,8 @@ export class CardComponent {
   @Input() secondPara:string = ""
   @Input() cardLink:string = ""
   @Input() linkText:string = ""
-
+  @Input() cardClass?:string = ""
+  @Input() cardImage?:string = ""
+  @Input() cardImageStyle?:string = ""
+  @Input() imageAltText?:string = ""
 }

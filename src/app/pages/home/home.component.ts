@@ -11,16 +11,56 @@ export class HomeComponent {
   heroImage:string = "../../../../assets/images/ice.jpg"
   heroHeader:string = "Example"
   heroBottomSpan:string = "Example"
+  heroStyle:string = "h-screen"
+  heroTextStyle: string = "centered-full-page"
+  heroImageStyle: string = "object-cover"
   
   cardData = [
+    {
+      headerSubtitle: "subtitle",
+      header: "header1",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange']
+    },
     {
       headerSubtitle: "subtitle",
       header: "header",
       firstPara: "firstPara",
       secondPara: "secondPara",
       link: "./",
-      linkText: "LNK TEXT"
-    }
+      linkText: "LNK TEXT",
+      cardClass: ['white']
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange']
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['white']
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header last",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange']
+    },
   ]
 
 }

@@ -13,12 +13,13 @@ import { ServicesComponent } from './pages/services/services.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './shared/components/card/card.component';
 import { MatCardModule } from '@angular/material';
+import { ContactFormComponent } from './shared/components/contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'services', component: ServicesComponent }
+  { path: 'services', component: ServicesComponent },
+  { path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({
@@ -31,6 +32,7 @@ const routes: Routes = [
     ContactComponent,
     AboutComponent,
     ServicesComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,

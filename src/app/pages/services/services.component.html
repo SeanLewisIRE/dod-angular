@@ -1,1 +1,28 @@
-<p>services works!</p>
+<div id="services">
+    <div class="relative">
+    <app-hero 
+        [imageSrc]="heroImage" 
+        [header]="heroHeader"
+        [heroStyle]="heroStyle.join(' ')"
+        [heroTextStyle]="heroTextStyle.join(' ')"
+    >
+    </app-hero>
+    </div>
+    <div class="cards-container h-full mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+            <app-card class="masonry-item" *ngFor="let card of cardData" 
+                [header]="card.header" 
+                [firstPara]="card.firstPara"
+                [cardLink]="card.link" 
+                [linkText]="card.linkText" 
+                [cardClass]="card.cardClass.join(' ')"
+                [cardImage]="card.cardImage"
+                [cardImageStyle]="card.cardImageStyle?.join(' ')"
+            >
+            </app-card>
+        </div>
+    </div>
+    <app-contact-form>
+        
+    </app-contact-form>
+</div>

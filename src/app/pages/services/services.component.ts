@@ -5,11 +5,72 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent {
 
-  constructor() { }
+  heroTopSpan: string = ""
+  heroImage: string = "../../../../assets/images/ice.jpg"
+  heroHeader: string = "Services"
+  heroBottomSpan: string = ""
+  heroStyle: Array<string> = ['h-screen-25']
+  heroTextStyle: Array<string> = ['absolute', 'inset-0', 'flex', 'items-center', 'justify-center', 'mx-auto', 'text-shadow']
+  blanketCardStyle: Array<string> = ["rounded", "h-full", "mx-10"]
 
-  ngOnInit(): void {
-  }
-
+  cardData = [
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['white'].concat(this.blanketCardStyle),
+      cardImage: "https://picsum.photos/100",
+      cardImageStyle: ["rounded-full", "mx-auto", "h-20", "w-20"]
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange'].concat(this.blanketCardStyle)
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['white'].concat(this.blanketCardStyle)
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header1",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange'].concat(this.blanketCardStyle)
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['white'].concat(this.blanketCardStyle)
+    },
+    {
+      headerSubtitle: "subtitle",
+      header: "header last",
+      firstPara: "firstPara",
+      secondPara: "secondPara",
+      link: "./",
+      linkText: "LNK TEXT",
+      cardClass: ['orange'].concat(this.blanketCardStyle)
+    },
+  ]
 }

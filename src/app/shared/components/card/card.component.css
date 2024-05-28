@@ -1,0 +1,23 @@
+.orange {
+    background-color: #ff6900;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    margin-bottom: 1.25rem;
+    color: #828282;
+}
+
+.white > .mat-card-header {
+    color: #ff6900;
+}
+
+::ng-deep .mat-card-header-text {
+    margin: 0px!important;
+}
+
+::ng-deep .mat-card-actions {
+    margin: 0px !important;
+}

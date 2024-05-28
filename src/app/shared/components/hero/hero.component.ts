@@ -11,6 +11,9 @@ export class HeroComponent {
   @Input() header: string = '';
   @Input() bottomSpan: string = '';
   @Input() imageSrc: string = '';
+  @Input() heroStyle: string = '';
+  @Input() heroTextStyle: string = '';
+  @Input() heroImageStyle: string = '';
 
   constructor() { }
 

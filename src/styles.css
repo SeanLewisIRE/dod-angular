@@ -1,3 +1,27 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.h-screen-25 {
+    height: 25vh;
+}
+
+.h-screen-50 {
+    height: 50vh;
+}
+
+.h-screen-75 {
+    height: 75vh;
+}
+
+.h-screen-150 {
+    height: 150vh;
+}
+
+.h-screen-175 {
+    height: 175vh;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
