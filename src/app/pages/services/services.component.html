@@ -1,4 +1,4 @@
-<div id="services">
+<div id="services" class="background-gradient">
     <div class="relative">
     <app-hero 
         [imageSrc]="heroImage" 
@@ -8,7 +8,7 @@
     >
     </app-hero>
     </div>
-    <div class="cards-container h-full mx-auto">
+    <div class="h-full mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
             <app-card class="masonry-item" *ngFor="let card of cardData" 
                 [header]="card.header" 

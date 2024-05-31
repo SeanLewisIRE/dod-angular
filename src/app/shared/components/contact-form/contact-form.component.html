@@ -1,1 +1,22 @@
-<p>contact-form works!</p>
+<div id="contact-form" class="h-screen-75 py-20 px-2 md:py-30">
+    <div class="flex flex-col h-full w-11/12 md:w-2/3 lg:w-4/12 m-auto border">
+        <div class="flex flex-col items-center py-6">
+            <h3 class="text-3xl">GET IN TOUCH</h3>
+        </div>
+
+        <form class="contact-form flex flex-col gap-2" (ngSubmit)="sendEmail($event)">
+            <input class="my-1 px-1 py-0.5 bg-inherit placeholder-style" type="text" formControlName="name" name="name" placeholder="Name" required>
+
+            <input class="my-1 px-1 py-0.5 bg-inherit placeholder-style" type="email" formControlName="email" name="email" placeholder="E-mail" required>
+            <input class="my-1 px-1 py-0.5 bg-inherit placeholder-style" type="number" formControlName="phone" name="phone" placeholder="Phone" required>
+
+            <textarea class="my-1 px-1 py-1 min-h-40 bg-inherit placeholder-style" formControlName="message" name="message" placeholder="Message"
+            ></textarea>
+            
+            <!-- contact-form.invalid || this.emailSent == 'sent' -->
+            <input [disabled]="" 
+                class="ml-auto w-32 mt-2 inter bg-black hover:bg-slate-700 text-white font-bold py-1 px-4 "
+                type="submit" value="SEND">
+        </form>
+    </div>
+</div>
