@@ -1,0 +1,16 @@
+.background-gradient {
+    background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%);
+}
+
+.icon-size {
+    transform: scale(2);
+}
+
+.orange {
+    color: #ff6900;
+    opacity: 0.85;
+}
+
+.charcoal {
+    color: #606060;
+}

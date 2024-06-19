@@ -5,37 +5,46 @@ nav {
 
 .initial-opacity {
     background-color: rgba(148, 163, 184, 0);
-    /* animation-name: fadeOutOpacity; */
-    /* animation-iteration-count: 1; */
-    /* animation-timing-function: ease-out; */
-    /* animation-duration: 0.2s; */
 }
 
 .scroll-opacity {
     background-color: rgba(148, 163, 184, 0.9);
-    /* animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in; 
-    animation-duration: 0.5s; */
 }
 
-@keyframes fadeInOpacity {
+.options-background {
+    background-color: rgba(148, 163, 184, 0.9);
+}
+
+.fade-in-menu {
+    animation: fadeInFromTop 0.5s forwards;
+}
+
+.fade-out-menu {
+    animation: fadeOutFromTop 0.5s forwards;
+}
+
+@keyframes fadeInFromTop {
     0% {
-        opacity: 30;
+        opacity: 0;
+        transform: translateY(-40px);
     }
 
     100% {
-        opacity: 90;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@keyframes fadeOutOpacity {
+@keyframes fadeOutFromTop {
     0% {
-        opacity: 90;
+        opacity: 1;
+        transform: translateY(0);
+        
     }
 
     100% {
         opacity: 0;
+        transform: translateY(-40px);
     }
 }
 

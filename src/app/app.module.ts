@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './shared/components/card/card.component';
 import { MatCardModule } from '@angular/material';
 import { ContactFormComponent } from './shared/components/contact-form/contact-form.component';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,7 +40,8 @@ const routes: Routes = [
     AppRoutingModule,
     CardComponent,
     MatCardModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MatIconModule
   ],
   exports: [RouterModule],
   providers: [],

@@ -1,14 +1,14 @@
-<nav id="nav" [ngClass]="[navStyle]" class="fixed w-screen flex flex-wrap items-center px-2 py-3">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+<nav id="nav" class="fixed w-screen flex flex-wrap items-center">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <div [ngClass]="[navStyle]" class="py-3 px-4 w-full flex justify-between lg:w-auto  lg:static lg:block lg:justify-start">
             <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
                 routerLink="/">
                 DOD
             </a>
             
-            <button (click)="toggleNavbar()" type="button" class=" keep-opacity lg:hidden bg-black fixed z-50 right-0 mx-2 inline items-center justify-center p-2 rounded-md
+            <button (click)="toggleNavbar()" type="button" class="keep-opacity lg:hidden bg-black fixed z-50 right-0 mx-2 inline items-center justify-center p-2 rounded-md
                 text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2
-                focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
 
                 <svg *ngIf="showNavbar; else closeMenuBlock" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -23,8 +23,8 @@
                 </ng-template>
             </button>
         </div>
-        <div [ngClass]="{'hidden': !showNavbar, 'flex': showNavbar}" class="lg:flex lg:flex-grow items-center">
-            <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <div [ngClass]="{'hidden, fade-out-menu': !showNavbar, 'flex, fade-in-menu': showNavbar}" class="lg:flex lg:flex-grow items-center w-full options-background">
+            <ul class="flex flex-col lg:flex-row list-none">
                 <li class="nav-item py-4 lg:py-0">
                     <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white"
                         routerLink="/services">

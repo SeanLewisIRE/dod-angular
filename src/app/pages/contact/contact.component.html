@@ -1,1 +1,36 @@
-<p>contact works!</p>
+<div id="services" class="background-gradient">
+    <div class="relative">
+        <app-hero [imageSrc]="heroImage" [header]="heroHeader" [heroStyle]="heroStyle.join(' ')"
+            [heroTextStyle]="heroTextStyle.join(' ')">
+        </app-hero>
+    </div>
+
+    <div class="flex flex-col w-10/12 mx-auto">
+        <div class="pt-6">
+            <h2 class="text-xl text-center py-6">GET IN TOUCH</h2>
+            <p class="charcoal">
+                Feel free to contact me if you have any questions.
+                Send a message using the form below or contact me directly by calling or sending an e-mail
+            </p>
+        </div>
+        <div class="flex flex-col mt-10">
+            <div class="flex flex-col items-center pb-3">
+                <mat-icon class="icon-size orange">email</mat-icon>
+                <div class="my-5 text-center">
+                    <p>EMAIL</p>
+                    <a class="my-5" href="mailto: dod@email.com" target="_blank">dod@email.com</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center pt-3">
+                <mat-icon class="icon-size orange">phone</mat-icon>
+                <div class="my-5 text-center">
+                    <p>PHONE</p>
+                    <a href="tel: 123456778" target="_blank">081 0482081</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <app-contact-form>
+    </app-contact-form>
+</div>
