@@ -1,16 +1,24 @@
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+
+  ngOnInit(): void {
+    if (window.innerWidth < 640)
+      this.showNavbar = true
+  }
+  
   navStyle: string = 'initial-opacity';
   showNavbar = false;
+  showNavMenu = false;
   
-  toggleNavbar() {
-    this.showNavbar = !this.showNavbar;
+  toggleNavMenu() {
+    this.showNavMenu = !this.showNavMenu;
+    this.showNavbar ? this.navStyle = 'scroll-opacity' : window.scrollY > 20 ? this.navStyle = 'scroll-opacity' : this.navStyle = 'initial-opacity'
   }
 
   @HostListener('window:scroll', [])
@@ -21,4 +29,11 @@ export class NavbarComponent {
       this.navStyle = 'initial-opacity'
     }
   }
+
+  @HostListener('window:resize', [])
+    onResize() {
+      if(window.innerWidth < 640)
+        this.showNavbar = true
+    }  
+  
 }
