@@ -23,7 +23,7 @@ export class HomeComponent {
       secondPara: "secondPara",
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange']
+      cardClass: ['orange-home']
     },
     {
       headerSubtitle: "subtitle",
@@ -41,7 +41,7 @@ export class HomeComponent {
       secondPara: "secondPara",
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange']
+      cardClass: ['orange-home']
     },
     {
       headerSubtitle: "subtitle",
@@ -59,7 +59,7 @@ export class HomeComponent {
       secondPara: "secondPara",
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange']
+      cardClass: ['orange-home']
     },
   ]
 

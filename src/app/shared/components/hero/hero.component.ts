@@ -14,6 +14,7 @@ export class HeroComponent {
   @Input() heroStyle: string = '';
   @Input() heroTextStyle: string = '';
   @Input() heroImageStyle: string = '';
+  @Input() heroNavButtons: boolean = false;
 
   constructor() { }
 

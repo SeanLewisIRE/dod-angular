@@ -1,8 +1,54 @@
 
 .background {
-    background-color: #2C3E50E6;
+    background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%);
 }
 
 .orange-border {
     border: 10px solid #ff6900;
+}
+
+@media (min-width: 1024px) {
+    .orange-border {
+        border: none;
+        margin-left: 5rem;
+    }
+
+    .container-div {
+        padding: 20px;
+        position: relative;
+        box-sizing: border-box;
+        /* Ensure padding and border are included in the width and height */
+        overflow: visible;
+        /* Allow the image to overflow the div */
+    }
+
+    .top-left-image {
+        position: absolute;
+        top: -150px;
+        /* Dramatically offset the image vertically */
+        left: -175px;
+        /* Dramatically offset the image horizontally */
+        width: 440px;
+        /* Adjust width to cover the div including padding and border */
+        height: 286px;
+        /* Adjust height to cover the div including padding and border */
+        object-fit: cover;
+        z-index: 01;
+        /* Ensure the image is behind the text */
+    }
+
+    .container-div p {
+        position: relative;
+        z-index: 10;
+        /* Ensure the text is above the image */
+        /* margin: 0; */
+        /* border: 10px solid #ff6900; */
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 10;
+        /* Ensure the text is above the image */
+        border: 10px solid #ff6900;
+    }
 }

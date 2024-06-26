@@ -1,16 +1,28 @@
-.orange {
+.orange-home {
     background-color: #ff6900;
     margin-bottom: 1.25rem;
     color: white;
 }
 
-.white {
+.orange-service {
+    background-color: #ff6900;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+.white-home {
     background-color: white;
     margin-bottom: 1.25rem;
     color: #828282;
 }
 
-.white > .mat-card-header {
+.white-service {
+    background-color: white;
+    margin-bottom: 1.25rem;
+    color: #828282;
+}
+
+.white-home > .mat-card-header, .white-service > .mat-card-header {
     color: #ff6900;
 }
 
@@ -24,6 +36,16 @@
 
 .fade-in-menu {
     animation: fadeInFromTop 0.5s forwards;
+}
+
+@media (min-width: 768px) {
+    .orange-home {
+        width: 200px;
+    }
+
+    .white-home {
+        width: 200px;
+    }
 }
 
 @keyframes fadeInFromTop {

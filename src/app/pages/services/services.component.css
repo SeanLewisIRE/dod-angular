@@ -7,7 +7,7 @@
 }
 
 .masonry-item:nth-child(3n+1) {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 @media (min-width: 640px) {
@@ -33,8 +33,9 @@
 
     .masonry-item {
         display: inline-block;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
         width: 100%;
+        height: 100%;
     }
 
     /* Adjust offsets for each column */
