@@ -1,19 +1,20 @@
 <div class="background">
-    <app-hero
-        [topSpan]="heroTopSpan"
-        [imageSrc]="heroImage"
-        [header]="heroHeader"
-        [bottomSpan]="heroBottomSpan"
-        [heroStyle]="heroStyle"
-        [heroTextStyle]="heroTextStyle"
-        [heroImageStyle]="heroImageStyle"
-        [heroNavButtons]=true
-    >
-    </app-hero>
-
+    <div class="relative">
+        <app-hero
+            [topSpan]="heroTopSpan"
+            [imageSrc]="heroImage"
+            [header]="heroHeader"
+            [bottomSpan]="heroBottomSpan"
+            [heroStyle]="heroStyle"
+            [heroTextStyle]="heroTextStyle"
+            [heroImageStyle]="heroImageStyle"
+            [heroNavButtons]=true
+        >
+        </app-hero>
+    </div>
     <!-- Card Section -->
-    <div class="card-wrapper h-full flex flex-col lg:flex-row w-10/12 m-auto">
-        <div class="text-white mt-8 lg:w-3/6">
+    <div class="card-wrapper flex flex-col lg:flex-row w-10/12 m-auto lg:items-center justify-center">
+        <div class="text-white mt-8 lg:w-3/6 xl:w-2/6">
             <h1 class="text-3xl">DISCOVER WHAT WE OFFER</h1>
             <p class="w-4/5">We offer basic and advanced Polar Code courses for Officers and operators. The courses cover all training requirements
             in accordance to the IMO Polar Code, which became mandatory after 1 July 2018. All courses are within IMO STCW, Table
@@ -22,8 +23,8 @@
         </div>
         
         <!-- To Create the effect, 2x cols, left col w/3 cards, right w/2. Left flex edge 2 edge, right items in middle -->
-        <div class="flex flex-col md:flex-row md:h-screen-75 lg:w-3/6 justify-between">
-            <div class="mt-4 md:p-8 md:justify-between lg:px-0">
+        <div class="flex flex-col h-full md:flex-row lg:w-3/6 justify-between lg:justify-around">
+            <div class="mt-4 md:p-8 lg:px-0">
                 <app-card 
                     *ngFor="let card of cardData.slice(0, 3)" 
                     [header]="card.header" 
@@ -49,29 +50,18 @@
         </div>
     </div>
     <!-- Who I Am Section -->
-    <!-- <div class="h-100 py-8 bg-white">
-        <img src="../../../assets/images/zodiac.jpg" class="w-4/5 mx-auto mb-4"/>
-        <div class="w-4/5 mx-auto orange-border mt-4 p-8">
-            <h2 class="text-3xl">WHO I AM</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
-                Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
-                sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
-            </p>
-        </div>
-    </div> -->
-    <div class="h-screen-50 flex justify-evenly items-center">
-        <div class="container-div w-6/12">
+    <div class="who-section-height flex justify-evenly items-center">
+        <div class="container-div w-5/6 lg:w-6/12">
             <img src="../../../assets/images/zodiac.jpg" alt="Description of image" class="mb-4 top-left-image">
-            <div class="wrapper ml-20 w-full">
-            <div class="orange-border ">
-                <h2 class="text-5xl p-3">WHO I AM</h2>
-                <p class="p-5 text-lg text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
-                    Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
-                    sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
-                </p>
-            </div>
+            <div class="wrapper lg:ml-20 lg:w-full">
+                <div class="orange-border">
+                    <h2 class="text-5xl p-3">WHO I AM</h2>
+                    <p class="p-5 text-lg text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
+                        Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
+                        sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

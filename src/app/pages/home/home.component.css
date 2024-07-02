@@ -5,9 +5,15 @@
 
 .orange-border {
     border: 10px solid #ff6900;
+    margin-bottom: 3rem;
 }
 
 @media (min-width: 1024px) {
+
+    .who-section-height {
+        min-height: 57vh;
+    }
+
     .orange-border {
         border: none;
         margin-left: 5rem;
@@ -51,4 +57,12 @@
         /* Ensure the text is above the image */
         border: 10px solid #ff6900;
     }
+}
+
+@media (min-width: 1280px) {
+
+    .who-section-height {
+        min-height: 70vh;
+    }
+
 }

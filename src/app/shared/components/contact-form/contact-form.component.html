@@ -1,10 +1,10 @@
-<div id="contact-form" class="h-screen-75 py-20 px-2 md:py-30">
-    <div class="flex flex-col h-full w-11/12 md:w-2/3 lg:w-4/12 m-auto border">
+<div id="contact-form" class="flex flex-col py-20 px-2 md:py-30 lg:flex-row xl:mx-48">
+    <div class="h-full w-11/12 md:w-2/3 lg:w-6/12 lg:m-6 m-auto border lg:h-min">
         <div class="flex flex-col items-center py-6">
             <h3 class="text-3xl">GET IN TOUCH</h3>
         </div>
 
-        <form class="contact-form flex flex-col gap-2" (ngSubmit)="sendEmail($event)">
+        <form class="h-full contact-form flex flex-col gap-2" (ngSubmit)="sendEmail($event)">
             <input class="my-1 px-1 py-0.5 bg-inherit placeholder-style" type="text" formControlName="name" name="name" placeholder="Name" required>
 
             <input class="my-1 px-1 py-0.5 bg-inherit placeholder-style" type="email" formControlName="email" name="email" placeholder="E-mail" required>
@@ -19,4 +19,5 @@
                 type="submit" value="SEND">
         </form>
     </div>
+    <img src="../../../assets/images/zodiac.jpg" class="hidden lg:min-h-full lg:block object-cover w-6/12 p-6">
 </div>

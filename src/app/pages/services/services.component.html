@@ -1,15 +1,15 @@
 <div id="services" class="background-gradient">
     <div class="relative">
-    <app-hero 
-        [imageSrc]="heroImage" 
-        [header]="heroHeader"
-        [heroStyle]="heroStyle.join(' ')"
-        [heroTextStyle]="heroTextStyle.join(' ')"
-    >
-    </app-hero>
+        <app-hero 
+            [imageSrc]="heroImage" 
+            [header]="heroHeader"
+            [heroStyle]="heroStyle.join(' ')"
+            [heroTextStyle]="heroTextStyle.join(' ')"
+        >
+        </app-hero>
     </div>
-    <div class="h-full mx-auto mt-8 lg:w-11/12">
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 ">
+    <div class="h-full mx-auto mt-8 lg:w-11/12 2xl:w-10/12">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3">
             <app-card class="masonry-item" *ngFor="let card of cardData" 
                 [header]="card.header" 
                 [firstPara]="card.firstPara"
@@ -21,8 +21,7 @@
             >
             </app-card>
         </div>
+        <app-contact-form>
+        </app-contact-form>
     </div>
-    <app-contact-form>
-        
-    </app-contact-form>
 </div>

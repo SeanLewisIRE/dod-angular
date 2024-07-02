@@ -2,10 +2,10 @@
     <img src={{imageSrc}} class="{{heroImageStyle}} z-10 h-full w-full" />
     <div class="{{heroTextStyle}} w-4/5 text-white text-xl leading-relaxed tracking-widest lora">
         <span class="text-white inter">{{topSpan}}</span>
-        <h2 class="text-white text-3xl mt-1 mb-4 lora pageHeader">{{header}}</h2>
+        <h2 class="text-white font-black shadow text-4xl md:text-7xl mt-1 mb-4 lora pageHeader">{{header}}</h2>
         <span class="text-white font-bold inter">{{bottomSpan}}</span>
         <div *ngIf="heroNavButtons" class="flex flex-col lg:flex-row justify-around lg:w-96 mt-4 mx-auto">
-            <button routerLink="/services" class="hero-button-orange lg:w-40">SERVICES</button>
+            <button routerLink="/services" class="hero-button-orange lg:w-40 ">SERVICES</button>
             <button routerLink="/contact" class="hero-button-orange lg:w-40">CONTACT</button>
         </div>
     </div>
