@@ -13,56 +13,103 @@
         </app-hero>
     </div>
     <!-- Card Section -->
-    <div class="card-wrapper flex flex-col lg:flex-row w-10/12 m-auto lg:items-center justify-center">
-        <div class="text-white mt-8 lg:w-3/6 xl:w-2/6">
-            <h1 class="text-3xl">DISCOVER WHAT WE OFFER</h1>
-            <p class="w-4/5">We offer basic and advanced Polar Code courses for Officers and operators. The courses cover all training requirements
-            in accordance to the IMO Polar Code, which became mandatory after 1 July 2018. All courses are within IMO STCW, Table
-            A-V/4-1 for Basic and Table A-V/4-2 for Advanced.
-            </p>
-        </div>
-        
-        <!-- To Create the effect, 2x cols, left col w/3 cards, right w/2. Left flex edge 2 edge, right items in middle -->
-        <div class="flex flex-col h-full md:flex-row lg:w-3/6 justify-between lg:justify-around">
-            <div class="mt-4 md:p-8 lg:px-0">
-                <app-card 
-                    *ngFor="let card of cardData.slice(0, 3)" 
-                    [header]="card.header" 
-                    [firstPara]="card.firstPara"
-                    [cardLink]="card.link" 
-                    [linkText]="card.linkText"
-                    [cardClass]="card.cardClass.join(' ')"
-                >
-                </app-card>
+    <div >
+        <div class="card-wrapper flex flex-col lg:flex-row w-10/12 m-auto lg:items-center justify-center">
+            <div class="text-white mt-8 lg:w-3/6 xl:w-2/6">
+                <h1 class="text-3xl">DISCOVER WHAT WE OFFER</h1>
+                <p class="w-4/5">We offer basic and advanced Polar Code courses for Officers and operators. The courses cover all training requirements
+                in accordance to the IMO Polar Code, which became mandatory after 1 July 2018. All courses are within IMO STCW, Table
+                A-V/4-1 for Basic and Table A-V/4-2 for Advanced.
+                </p>
             </div>
-            <div class="mb-4 md:p-8 md:justify-around lg:px-0">
-                <app-card 
-                    *ngFor="let card of cardData.slice(3)" 
-                    [header]="card.header" 
-                    [firstPara]="card.firstPara"
-                    [cardLink]="card.link" 
-                    [linkText]="card.linkText"
-                    [cardClass]="card.cardClass.join(' ')"
-                    class=""
+            
+            <!-- To Create the effect, 2x cols, left col w/3 cards, right w/2. Left flex edge 2 edge, right items in middle -->
+            <div class="flex flex-col h-full md:flex-row lg:w-3/6 justify-between lg:justify-around">
+                <div class="mt-4 md:p-8 lg:px-0">
+                    <app-card 
+                        *ngFor="let card of cardData.slice(0, 3)" 
+                        [header]="card.header" 
+                        [firstPara]="card.firstPara"
+                        [cardLink]="card.link" 
+                        [linkText]="card.linkText"
+                        [cardClass]="card.cardClass.join(' ')"
                     >
-                </app-card>
-            </div>
-        </div>
-    </div>
-    <!-- Who I Am Section -->
-    <div class="who-section-height flex justify-evenly items-center">
-        <div class="container-div w-5/6 lg:w-6/12">
-            <img src="../../../assets/images/zodiac.jpg" alt="Description of image" class="mb-4 top-left-image">
-            <div class="wrapper lg:ml-20 lg:w-full">
-                <div class="orange-border">
-                    <h2 class="text-5xl p-3">WHO I AM</h2>
-                    <p class="p-5 text-lg text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
-                        Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
-                        sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
-                    </p>
+                    </app-card>
+                </div>
+                <div class="mb-4 md:p-8 md:justify-around lg:px-0">
+                    <app-card 
+                        *ngFor="let card of cardData.slice(3)" 
+                        [header]="card.header" 
+                        [firstPara]="card.firstPara"
+                        [cardLink]="card.link" 
+                        [linkText]="card.linkText"
+                        [cardClass]="card.cardClass.join(' ')"
+                        class=""
+                        >
+                    </app-card>
                 </div>
             </div>
+        </div>
+        <!-- Who I Am Section -->
+        <div class="who-section-height flex justify-evenly items-center">
+            <div class="container-div w-5/6 lg:w-6/12">
+                <img src="../../../assets/images/zodiac.jpg" alt="Description of image" class="mb-4 top-left-image">
+                <div class="wrapper lg:ml-20 lg:w-full">
+                    <div class="orange-border">
+                        <h2 class="text-5xl p-3">WHO I AM</h2>
+                        <p class="p-5 text-lg text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
+                            Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
+                            sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div id="services">
+            <div class="h-full mx-auto mt-8 lg:w-11/12 2xl:w-10/12">
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3">
+                    <app-card class="masonry-item" *ngFor="let card of servicesCardData" [header]="card.header"
+                        [firstPara]="card.firstPara" [cardLink]="card.link" [linkText]="card.linkText"
+                        [cardClass]="card.cardClass.join(' ')" [cardImage]="card.cardImage"
+                        [cardImageStyle]="card.cardImageStyle?.join(' ')">
+                    </app-card>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="services " >
+            <div class="lg:mt-14 flex flex-col mx-auto w-10/12 lg:px-10 lg:flex-row lg:items-center xl:mx-48">
+                <div class="pt-6 lg:w-6/12 lg:px-6">
+                    <h2 class="text-xl text-center py-6">GET IN TOUCH</h2>
+                    <p class="w-9/12">
+                        Feel free to contact me if you have any questions.
+                        Send a message using the form below or contact me directly by calling or sending an e-mail
+                    </p>
+                </div>
+                <div class="flex flex-col mt-10 h-screen-25 lg:w-6/12 lg:flex-row lg:justify-around lg:items-center">
+                    <div class="flex flex-col items-center pb-3 lg:pb-0">
+                        <mat-icon class="icon-size orange">email</mat-icon>
+                        <div class="my-5 text-center">
+                            <p>EMAIL</p>
+                            <a class="my-5" href="mailto: dod@email.com" target="_blank">dod@email.com</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center pt-3 lg:pt-0">
+                        <mat-icon class="icon-size orange">phone</mat-icon>
+                        <div class="my-5 text-center">
+                            <p>PHONE</p>
+                            <a href="tel: 123456778" target="_blank">081 0482081</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <app-contact-form>
+            </app-contact-form>
         </div>
     </div>
 </div>
