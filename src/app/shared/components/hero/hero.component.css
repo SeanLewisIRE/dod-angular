@@ -15,20 +15,19 @@
     font-size: 1.25rem;
 }
 
-.hero-button-orange {
-    background-color: #EC8E3D;
+.hero-button-navy {
+    background-color: rgb(41, 67, 100, 100%);
     color: white;
-    border: 1px solid white;
+    font-weight: 500;
     padding: 0.75rem 0;
     margin: 0.75rem 0;
     font-size: medium;
     border-radius: 5px;
 }
 
-.hero-button-orange:focus {
-    background-color: white;
-    color: #EC8E3D;
-    border: 1px solid #EC8E3D;
+.hero-button-navy:hover {
+    background-color: rgb(41, 67, 100, 80%);
+
 }
 
 @media (min-width: 1024px) {

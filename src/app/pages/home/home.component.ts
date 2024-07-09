@@ -7,69 +7,73 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  heroTopSpan:string = "Example"
+  heroTopSpan:string = ""
   heroImage:string = "../../../../assets/images/ice.jpg"
-  heroHeader:string = "Example"
-  heroBottomSpan:string = "Example"
+  heroHeader:string = "New Line Investments"
+  heroBottomSpan:string = ""
   heroStyle:string = "h-screen"
   heroTextStyle: string = "centered-full-page"
   heroImageStyle: string = "object-cover"
   
   cardData = [
     {
-      headerSubtitle: "subtitle",
-      header: "header1",
-      firstPara: "firstPara",
-      secondPara: "secondPara",
+      headerSubtitle: "",
+      header: "Basic and Advanced Polar code courses",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
+      firstPara: "This is an STCW course approved for the requirements in the new Polar Code regulations in force from 1 July 2018.",
+      secondPara: "",
       link: "./",
-      linkText: "LNK TEXT",
-      cardClass: ['orange-home']
+      linkText: "",
+      cardClass: ['white-home']
     },
     {
-      headerSubtitle: "subtitle",
-      header: "header",
-      firstPara: "firstPara",
-      secondPara: "secondPara",
+      headerSubtitle: "",
+      header: "Basic and Advanced Polar code courses",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
+      firstPara: "This is an STCW course approved for the requirements in the new Polar Code regulations in force from 1 July 2018.",
+      secondPara: "",
       link: "./",
-      linkText: "LNK TEXT",
-      cardClass: ['white']
+      linkText: "",
+      cardClass: ['white-home']
     },
     {
-      headerSubtitle: "subtitle",
-      header: "header",
-      firstPara: "firstPara",
-      secondPara: "secondPara",
+      headerSubtitle: "",
+      header: "Basic and Advanced Polar code courses",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
+      firstPara: "This is an STCW course approved for the requirements in the new Polar Code regulations in force from 1 July 2018.",
+      secondPara: "",
       link: "./",
-      linkText: "LNK TEXT",
-      cardClass: ['orange-home']
+      linkText: "",
+      cardClass: ['white-home']
     },
     {
-      headerSubtitle: "subtitle",
-      header: "header",
-      firstPara: "firstPara",
-      secondPara: "secondPara",
+      headerSubtitle: "",
+      header: "Basic and Advanced Polar code courses",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
+      firstPara: "This is an STCW course approved for the requirements in the new Polar Code regulations in force from 1 July 2018.",
+      secondPara: "",
       link: "./",
-      linkText: "LNK TEXT",
-      cardClass: ['white']
+      linkText: "",
+      cardClass: ['white-home']
     },
     {
-      headerSubtitle: "subtitle",
-      header: "header last",
-      firstPara: "firstPara",
-      secondPara: "secondPara",
+      headerSubtitle: "",
+      header: "Basic and Advanced Polar code courses",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
+      firstPara: "This is an STCW course approved for the requirements in the new Polar Code regulations in force from 1 July 2018.",
+      secondPara: "",
       link: "./",
-      linkText: "LNK TEXT",
-      cardClass: ['orange-home']
+      linkText: "",
+      cardClass: ['white-home']
     },
   ]
 
-  // heroTopSpan: string = ""
-  // heroImage: string = "../../../../assets/images/ice.jpg"
-  // heroHeader: string = "Services"
-  // heroBottomSpan: string = ""
-  // heroStyle: Array<string> = ['h-screen-25', 'lg:h-screen-50']
-  // heroTextStyle: Array<string> = ['absolute', 'inset-0', 'flex', 'items-center', 'justify-center', 'mx-auto', 'text-shadow']
-  blanketCardStyle: Array<string> = ["rounded", "h-full", "mx-10", "lg:mx-5"]
+  blanketCardStyle: Array<string> = ["rounded", "h-full"]
 
   servicesCardData = [
     {
@@ -77,6 +81,8 @@ export class HomeComponent {
       header: "header",
       firstPara: "firstPara",
       secondPara: "secondPara",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
       link: "./",
       linkText: "LNK TEXT",
       cardClass: ['white-service'].concat(this.blanketCardStyle),
@@ -88,9 +94,11 @@ export class HomeComponent {
       header: "header",
       firstPara: "firstPara",
       secondPara: "secondPara",
+      headerClassStyle: ['text-lg','font-semibold'],
+      cardTextStyle: ['opacity-90'],
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange-service'].concat(this.blanketCardStyle),
+      cardClass: ['navy-service'].concat(this.blanketCardStyle),
       cardImage: "https://picsum.photos/100",
       cardImageStyle: ["rounded-full", "mx-auto", "h-20", "w-20"]
     },
@@ -99,6 +107,8 @@ export class HomeComponent {
       header: "header",
       firstPara: "firstPara",
       secondPara: "secondPara",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
       link: "./",
       linkText: "LNK TEXT",
       cardClass: ['white-service'].concat(this.blanketCardStyle),
@@ -108,11 +118,13 @@ export class HomeComponent {
     {
       headerSubtitle: "subtitle",
       header: "header1",
+      headerClassStyle: ['text-2xl', 'text-blue'],
       firstPara: "firstPara",
       secondPara: "secondPara",
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange-service'].concat(this.blanketCardStyle),
+      cardTextStyle: ['text-m', 'text-white'],
+      cardClass: ['navy-service'].concat(this.blanketCardStyle),
       cardImage: "https://picsum.photos/100",
       cardImageStyle: ["rounded-full", "mx-auto", "h-20", "w-20"]
     },
@@ -121,6 +133,8 @@ export class HomeComponent {
       header: "header",
       firstPara: "firstPara",
       secondPara: "secondPara",
+      headerClassStyle: ['text-lg', 'header-blue', 'font-semibold'],
+      cardTextStyle: ['text-blue'],
       link: "./",
       linkText: "LNK TEXT",
       cardClass: ['white-service'].concat(this.blanketCardStyle),
@@ -132,9 +146,11 @@ export class HomeComponent {
       header: "header last",
       firstPara: "firstPara",
       secondPara: "secondPara",
+      headerClassStyle: ['text-lg', 'font-semibold'],
+      cardTextStyle: ['opacity-90'],
       link: "./",
       linkText: "LNK TEXT",
-      cardClass: ['orange-service'].concat(this.blanketCardStyle),
+      cardClass: ['navy-service'].concat(this.blanketCardStyle),
       cardImage: "https://picsum.photos/100",
       cardImageStyle: ["rounded-full", "mx-auto", "h-20", "w-20"]
     },

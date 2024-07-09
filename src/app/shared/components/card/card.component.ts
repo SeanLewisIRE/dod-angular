@@ -21,4 +21,6 @@ export class CardComponent {
   @Input() cardImage?:string = ""
   @Input() cardImageStyle?:string = ""
   @Input() imageAltText?:string = ""
+  @Input() cardTextStyle?:string = ""
+  @Input() headerClassStyle?:string = ""
 }

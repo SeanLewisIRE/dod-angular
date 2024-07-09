@@ -1,9 +1,9 @@
 .border {
     padding: 1.65rem;
-    border: 10px solid #FF7B00;
+    border: 10px solid #294364;
 }
 
 .placeholder-style {
     color: #69727d;
-    border-bottom: 2px solid #FFFFFF87;
+    border-bottom: 2px solid rgb(41, 67, 100, 80%);
 }

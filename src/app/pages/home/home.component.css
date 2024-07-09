@@ -1,10 +1,11 @@
 
 .background {
-    background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%);
+    /* background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%); */
+    background: #E7EEF4;
 }
 
-.orange-border {
-    border: 10px solid #ff6900;
+.blue-border {
+    border: 10px solid #294364;
     margin-bottom: 3rem;
 }
 
@@ -14,7 +15,7 @@
         min-height: 57vh;
     }
 
-    .orange-border {
+    .blue-border {
         border: none;
         margin-left: 5rem;
     }
@@ -55,7 +56,7 @@
         position: relative;
         z-index: 10;
         /* Ensure the text is above the image */
-        border: 10px solid #ff6900;
+        border: 10px solid #294364;
     }
 }
 
@@ -70,7 +71,8 @@
 /* Services CSS */
 
 .background-gradient {
-    background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%);
+    /* background: linear-gradient(180deg, #E7EEF4 0%, #294364 100%); */
+    /* background: #E7EEF4; */
 }
 
 .masonry-item {
@@ -129,8 +131,8 @@
     transform: scale(2);
 }
 
-.orange {
-    color: #ff6900;
+.navy {
+    color: #294364;
     opacity: 0.85;
 }
 
