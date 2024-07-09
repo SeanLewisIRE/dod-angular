@@ -8,6 +8,10 @@
     border: 10px solid #294364;
 }
 
+.link:hover {
+    opacity: 80%;
+}
+
 @media (min-width: 1024px) {
 
     .who-section-height {
@@ -134,7 +138,6 @@
 
 .navy {
     color: #294364;
-    opacity: 0.85;
 }
 
 .charcoal {

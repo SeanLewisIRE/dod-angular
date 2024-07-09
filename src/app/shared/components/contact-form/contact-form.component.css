@@ -7,3 +7,12 @@
     color: #69727d;
     border-bottom: 2px solid rgb(41, 67, 100, 80%);
 }
+
+.send-button {
+    background-color: rgb(41, 67, 100, 100%);
+    color: white;
+}
+
+.send-button:hover {
+    background-color: rgb(41, 67, 100, 80%);
+}
