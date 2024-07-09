@@ -60,7 +60,7 @@
                 <div class="wrapper lg:ml-20 lg:w-full">
                     <div class="blue-border bg-white">
                         <h2 class="header-blue text-4xl md:text-7xl p-6">Who I Am</h2>
-                        <p class="px-6 pb-8 text-base text-blue">
+                        <p class="px-6 pb-8 md:pb-10 text-base text-blue">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nulla quis neque condimentum varius non ac massa.
                             Phasellus in mauris ante. Aenean egestas hendrerit orci, accumsan tempus dolor porttitor sed. Sed blandit malesuada nunc
                             sit amet hendrerit. Cras convallis sit amet mi ut maximus. Pellentesque elementum porttitor porta.
@@ -74,7 +74,7 @@
         <div id="services" class="card-wrapper flex flex-col lg:flex-row w-10/12 m-auto lg:items-center justify-center">
             <div class="text-white mt-8 lg:w-3/6 xl:w-2/6">
                 <h2 class="header-blue font-black text-4xl md:text-7xl">Discover What I Offer</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3">
+                <div class="grid grid-cols">
                     <app-card class="masonry-item" *ngFor="let card of servicesCardData" 
                         [header]="card.header"
                         [headerClassStyle]="card.headerClassStyle?.join(' ')"
@@ -92,23 +92,23 @@
 
         <!-- Contact -->
         <div id="contact" >
-            <div class="lg:mt-14 flex flex-col mx-auto w-10/12 lg:px-10 lg:flex-row lg:items-center xl:mx-48">
-                <div class="pt-6 lg:w-6/12 lg:px-6">
+            <div class="flex flex-col mx-auto w-10/12 md:px-10 md:flex-row md:mt-14 md:items-center xl:mx-48">
+                <div class="pt-6 md:w-6/12 md:px-6">
                     <h2 class="header-blue font-black text-4xl md:text-7xl py-6">GET IN TOUCH</h2>
                     <p class="text-base w-9/12">
                         Feel free to contact me if you have any questions.
                         Send a message using the form below or contact me directly by calling or sending an e-mail
                     </p>
                 </div>
-                <div class="flex flex-col mt-10 h-screen-25 lg:w-6/12 lg:flex-row lg:justify-around lg:items-center">
-                    <div class="flex flex-col items-center pb-3 lg:pb-0">
+                <div class="flex flex-col mt-10 h-screen-25 md:w-6/12 md:flex-row md:justify-around md:items-center">
+                    <div class="flex flex-col items-center pb-3 md:pb-0">
                         <mat-icon class="icon-size navy">email</mat-icon>
                         <div class="my-5 text-center text-blue font-black">
                             <p>Email</p>
                             <a class="my-5" href="mailto: dod@email.com" target="_blank">dod@email.com</a>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center pt-3 lg:pt-0">
+                    <div class="flex flex-col items-center pt-3 md:pt-0">
                         <mat-icon class="icon-size navy">phone</mat-icon>
                         <div class="my-5 text-center text-blue font-black">
                             <p>Phone</p>
