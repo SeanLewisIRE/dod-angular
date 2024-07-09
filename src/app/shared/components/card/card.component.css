@@ -6,9 +6,10 @@
 
 .white-home {
     background-color: white;
+    width: 100%;
     margin-bottom: 1.25rem;
-    color: #828282;
-    min-width: 320px;
+    /* color: #828282; */
+    /* min-width: 320px; */
 }
 
 .white-service {
@@ -16,10 +17,6 @@
     margin-bottom: 1.25rem;
     color: #828282;
 }
-
-/* .white-home > .mat-card-header, .white-service > .mat-card-header {
-    color: #ff6900;
-} */
 
 ::ng-deep .mat-card-header-text {
     margin: 0px!important;
@@ -38,9 +35,9 @@
         width: 200px;
     } */
 
-    .white-home {
+    /* .white-home {
         width: 200px;
-    }
+    } */
 }
 
 @keyframes fadeInFromTop {
